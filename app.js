@@ -18,7 +18,9 @@ var app = express();
 // Declaration Models
 var Reservation = require('./models/reservation');
 var User = require('./models/user');
+
 var Logement = require('./models/logement');
+
 
 // Pour charger toutes les 'vues.pug' dans le dossier 'views'
 app.set('views',path.join(__dirname, 'views'));
@@ -102,8 +104,10 @@ app.use('/users', require('./routes/users'));
 app.use('/reservations', require('./routes/reservation'));
 
 
+
 app.use('/crudusers', require('./routes/userss'));               // '/' le path qui sera tjs utiliser en premier , et le routes qui contient les routes CRUD
 app.use('/logements', require('./routes/logements'));               // '/' le path qui sera tjs utiliser en premier , et le routes qui contient les routes CRUD
+
 
 
 

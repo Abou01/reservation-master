@@ -37,7 +37,7 @@ echo "# reservation" >> README.md
 git init
 git add README.md
 git add .
-git commit -m "routes->Crud-userss/ et la base mlab"
+git commit -m "routes->Crud-userss/ Crud-logements et la base mlab dans config/database"
 git remote add origin https://github.com/deadfantom2/reservation.git
 git remote add origin https://github.com/Abou01/reservation-master.git
 git push -u origin master

@@ -1,0 +1,10 @@
+extends layout
+block content
+
+    h1 #{title}
+    ul.list-group
+      each reservation, i in reservations
+        each user, i in users
+            li.list-group-item
+              h4 Date:   #{reservation.dateReservation}
+              h4 Name :  #{user.name}
